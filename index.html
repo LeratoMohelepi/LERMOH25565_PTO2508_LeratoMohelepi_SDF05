@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Footer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <!-- Responsive Footer using Tailwind CSS -->
+<footer class="bg-[#649C8A] text-grey-300 py-12 px-6">
+
+  <!-- Main footer container with grid layout -->
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+    
+    <!-- Newsletter section -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Subscribe to our newsletter for updates.</h3>
+      <div class="flex flex-col sm:flex-row gap-2">
+        <input 
+          type="email" 
+          placeholder="Email Address" 
+          class="p-2 bg-white border border-gray-300 rounded-md flex-grow focus:outline-none"
+        >
+        <button class="text-white px-4 py-2 rounded-md hover:bg-gray-800">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Links section -->
+    <div class="text-left">
+      <h3 class="text-lg font-semibold mb-4">Quick Link</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">Who We Are</a></li>
+        <li><a href="#" class="hover:underline">Our Philosophy</a></li>
+      </ul>
+    </div>
+
+    <!-- Technologies section -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Technologies</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">HTML</a></li>
+        <li><a href="#" class="hover:underline">CSS</a></li>
+        <li><a href="#" class="hover:underline">JavaScript</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bottom text -->
+  <div class="mt-20 text-left text-small font-medium">
+    <p>CODESPACE</p>
+  </div>
+
+</footer>
+</body>
+</html>
